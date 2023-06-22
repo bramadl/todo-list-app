@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <section id="app" class="todo-list">
+      <header class="todo-list--header tab">
+        <button class="tab--button" disabled>Notification</button>
+        <button class="tab--button tab--button-active">
+          Todo <span class="tab--button-anemic">3</span>
+        </button>
+      </header>
+      <ul class="todo-list--container"></ul>
+      <form class="todo-list--form form">
+        <div class="form-group">
+          <input
+            id="taskName"
+            class="form-field form-field--task-name"
+            name="taskName"
+            placeholder="Enter your task name here..."
+            type="text"
+          />
+          <textarea
+            id="taskDescription"
+            class="form-field form-field--task-description"
+            name="taskDescription"
+            placeholder="Write some description about your task here..."
+            rows="5"
+          ></textarea>
+        </div>
+        <div class="form-submit">
+          <div class="form-submit-buttons">
+            <button
+              class="form-submit--button form-submit--button-remove-all"
+              type="button"
+            >
+              Remove all
+            </button>
+            <button
+              class="form-submit--button form-submit--button-check-all"
+              type="button"
+            >
+              Check all
+            </button>
+          </div>
+          <div class="form-submit-buttons">
+            <button
+              class="form-submit--button form-submit--button-cancel"
+              type="reset"
+            >
+              Cancel
+            </button>
+            <button
+              class="form-submit--button form-submit--button-add"
+              type="submit"
+            >
+              Add task
+            </button>
+          </div>
+        </div>
+      </form>
+    </section>
+    <script src="./script.js"></script>
+  </body>
+</html>
